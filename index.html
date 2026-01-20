@@ -48,8 +48,9 @@
             border: none;
         }
         nav div button:hover {
-            background-color: #1144a3;
+            background: linear-gradient(135deg, #2563eb, #9333ea);
             color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .hero {
             display: flex;
@@ -140,7 +141,7 @@
         }
         .hero div img:hover {
             transform: rotate(10deg);
-            transition: all 0.5s ease-in-out;
+            transition: all 0.1s ease-in-out;
         }
         .about {
             max-width: 1218px;
@@ -288,22 +289,22 @@
       <div>
         <p><b>GAURAV GUPTA</b></p>
       </div>
-      <div>
+      <div class="icons">
         <ul>
           <li>HOME</li>
-          <li>EDUCATION</li>
-          <li>SKILLS</li>
-          <li>LEARNING</li> 
+          <li><a href="#education" style="text-decoration: none; color: white">EDUCATION</a></li>
+          <li><a href="#skills" style="text-decoration: none; color: white">SKILLS</a></li>
+          <li><a href="#learning" style="text-decoration: none; color: white">LEARNING</a></li>
         </ul>
       </div>
       <div>
-            <button>ABOUT</button>
-            <button>CONTACT US</button>
+          <button><a href="#about me" style="text-decoration: none; color: black">ABOUT</a></button>
+          <button><a href="#contact" style="text-decoration: none; color: black">CONTACT US</a></button>
       </div>
     </nav>
     <section class="hero">
         <div>
-            <h1>Hi, I'm Gaurav Gupta</h1>
+            <h1 id="me">Hi, I'm Gaurav Gupta</h1>
             <p>Computer Science Student & Aspiring Web Developer
                 <br><br>
                 • Learning core web technologies (HTML, CSS, JavaScript)
@@ -313,7 +314,7 @@
              • Improving problem-solving and coding fundamentals
              <br>
             </p>
-            <button>SEE MY WORK</button>
+            <button><a href="#about me" style="text-decoration: none; color: black">SEE MY WORK</a></button>
         
         <div class="social-icons">
            <a href="https://instagram.com/gaurav_gupta_720" target="_blank">
@@ -341,7 +342,7 @@
     
 
     <section class="about">
-        <h2>ABOUT ME</h2>
+        <h2 id="about me">ABOUT ME</h2>
         <p>I am an aspiring web developer passionate about creating user-friendly and responsive websites.
            I focus on writing clean code and learning modern web technologies to improve my development skills.
         </p>
@@ -353,7 +354,7 @@
 
     <section class="three-card">
         <div class="card">
-             <h3>EDUCATION</h3>
+             <h3 id="education">EDUCATION</h3>
              <uo>
                 <li>
                     BTech in Computer Science<br>
@@ -378,7 +379,7 @@
              </uo>
         </div>
         <div class="card">
-             <h3>SKILLS</h3>
+             <h3 id="skills">SKILLS</h3>
              <div class="skills">
                 <div class="skill"><i class="fa-brands fa-html5 html"></i> HTML</div>
                 <div class="skill"><i class="fa-brands fa-css3-alt css"></i> CSS</div>
@@ -388,7 +389,7 @@
             </div>
         </div>
         <div class="card">
-             <h3>LEARNING</h3>
+             <h3 id="learning">LEARNING</h3>
              <uo class="learning">
                 <li>Basic HTML and CSS layouts</li>
                 <br>
@@ -405,7 +406,7 @@
     
     <section class="footer">
         <div>
-          <h4>CONTACT</h4>
+          <h4 id="contact">CONTACT</h4>
           <p>✉ Email: <a href="mailto:gauravgupta5813@gmail.com">gauravgupta5813@gmail.com</a></p>
           <p class="copyright">© 2026 Gaurav Gupta</p>
         </div>
